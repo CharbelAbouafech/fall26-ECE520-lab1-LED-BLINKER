@@ -16,7 +16,7 @@ A testbench, `tb_rgb_led_top`, checks each switch, the no-switch case, the multi
  
 ## Verification and Results
  
-Simulation confirmed each switch lights the right color, invalid switch combos keep the LED off, and reset works correctly. On the board, the LED blinked the right color at the right rate for each switch and stayed off otherwise. The design was demonstrated on the Zybo Z7 and checked off by the instructor.
+Simulation confirmed each switch lights the right color, invalid switch combos keep the LED off, and reset works correctly. On the board, the LED blinked the right color at the right rate for each switch and stayed off otherwise.
 
 <img width="2306" height="475" alt="image" src="https://github.com/user-attachments/assets/3bb2ad4d-edda-4060-887a-128fee5904fc" />
 Fig 1: Blinking LED Test Case 1 & 2
