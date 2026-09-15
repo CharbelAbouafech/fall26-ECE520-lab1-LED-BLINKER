@@ -1,24 +1,22 @@
 # ECE 520/L – Lab 1: RGB LED Blinker
-
+ 
 **Author:** Charbel Abouafech
-
-## Introduction
-
-This lab implements a blinking RGB LED on the Zybo Z7 board using VHDL. A switch selects which color, red, green, or blue, blinks once per second. The design was built in Vivado, verified with a testbench in simulation, and then tested on the actual board.
-
-## Design
-
-The project has two main VHDL files. The first is `blinking_led`, a clock divider that toggles an output once per second using the 125 MHz system clock. The second is `rgb_led_top`, the top-level entity, which instantiates `blinking_led` and uses the switches to route the blink signal to one color.
-
-The `rgb_led_top` entity has four ports. `sys_clk` is a 1-bit input carrying the 125 MHz system clock. `rst` is a 1-bit active-high input connected to BTN0 that synchronously resets the design. `sw` is a 3-bit input used to select the active color. `rgb_out` is a 3-bit output, where bit 0 drives red, bit 1 drives green, and bit 2 drives blue.
-
-SW0 selects red, SW1 selects green, and SW2 selects blue. Only one switch may be active at a time. If no switch is active, or if more than one switch is active at the same time, the RGB LED stays off. Pressing BTN0 resets the blink counter.
-
-A testbench, `tb_rgb_led_top`, was written to verify the design in simulation before moving to hardware. It tests each switch case individually (SW0, SW1, SW2), the no-switch-active case, the multiple-switches-active case, and the reset behavior.
-
-## Results
-
-Simulation waveforms confirmed that each switch correctly selected its color, that the LED turned off for invalid switch combinations, and that reset worked as expected. On hardware, the RGB LED blinked at the correct color and rate for each switch and stayed off otherwise. The design was demonstrated on the Zybo Z7 board and verified with the instructor.
+ 
+## Overview
+ 
+This lab blinks an RGB LED on the Zybo Z7 board using VHDL. A switch picks the color — red, green, or blue — and that color blinks once per second. The design was built in Vivado, checked in simulation, and then tested on the board.
+ 
+## Design Summary
+ 
+There are two VHDL modules. `blinking_led` is a clock divider that toggles its output once per second using the board's 125 MHz clock. `rgb_led_top` is the top-level module — it uses the switches to pick a color and turns that color's blink signal on or off.
+ 
+`rgb_led_top` takes in the system clock, a reset button (BTN0), and three switches, and drives the three RGB output bits (red, green, blue). SW0 turns on red, SW1 turns on green, and SW2 turns on blue. If no switch is on, or more than one is on at the same time, the LED stays off. Pressing BTN0 resets the blink.
+ 
+A testbench, `tb_rgb_led_top`, checks each switch, the no-switch case, the multiple-switch case, and the reset, all in simulation before testing on hardware.
+ 
+## Verification and Results
+ 
+Simulation confirmed each switch lights the right color, invalid switch combos keep the LED off, and reset works correctly. On the board, the LED blinked the right color at the right rate for each switch and stayed off otherwise. The design was demonstrated on the Zybo Z7 and checked off by the instructor.
 
 <img width="2306" height="475" alt="image" src="https://github.com/user-attachments/assets/3bb2ad4d-edda-4060-887a-128fee5904fc" />
 Fig 1: Blinking LED Test Case 1 & 2
@@ -29,6 +27,10 @@ Fig 2: Blinking LED Test Case 3
 <img width="2311" height="474" alt="image" src="https://github.com/user-attachments/assets/477bd950-b460-435b-bc00-c5c8f90ef803" />
 Fig 3: Simulation results for RGB LED blinker design.
 
-## Conclusion
-
-This lab demonstrated how to build and verify a simple VHDL design that combines a reusable clock-divider module with switch-based control logic and the final result matched the expected behavior on the Zybo Z7 board.
+## Known Issues or Limitations
+ 
+No known issues. The design works as intended on both simulation and hardware.
+ 
+## References
+ 
+Course lecture materials for ECE 520/L.
