@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Note: Test case 1: Reset Behavior - rst=1, sw=000
+Time: 0 ps  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 2: Red selected - sw=001
+Time: 40 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 3: Green selected - sw=010
+Time: 240 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 4: Blue selected - sw=100
+Time: 440 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 5: Multiple switches active - sw=011 (LED must be off)
+Time: 640 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 6: No switches active - sw=000 (LED must be off)
+Time: 760 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 7: All switches active - sw=111 (LED must be off)
+Time: 840 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Test case 8: Direct color-to-color switch - Red then immediately Blue
+Time: 920 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd
+Note: Simulation complete
+Time: 1160 ns  Iteration: 0  Process: /tb_rgb_led_top/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/lab_rgb_led_charbel_abouafech/lab_rgb_led_charbel_abouafech.srcs/sim_1/new/tb_rgb_led_top.vhd

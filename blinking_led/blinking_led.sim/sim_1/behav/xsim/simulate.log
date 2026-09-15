@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Note: Test Case 1: Reset Behavior - rst=1, led_en=0
+Time: 0 ps  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
+Note: Test Case 2: Disabled Output - rst=0, led_en=0
+Time: 40 ns  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
+Note: Test Case 3: LED Toggling - led_en=1
+Time: 80 ns  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
+Note: Test Case 3 (cont.): Disable mid-blink to force led_out low
+Time: 440 ns  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
+Note: Re-enable and continue toggling
+Time: 480 ns  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
+Note: Simulation complete
+Time: 720 ns  Iteration: 0  Process: /tb_blinking_led/test  File: C:/Users/Char/Documents/ECE_520/Fall 26/blinking_led/blinking_led.srcs/sim_1/new/tb_blinking_led.vhd
